@@ -1,6 +1,6 @@
-# Project Newton-GraphMamba
+# Project drona-GraphMamba
 
-A Graph-Mamba model for route prediction, trained on Kaggle's free GPU tier and deployed for CPU inference.
+
 
 ## Architecture
 
