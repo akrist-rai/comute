@@ -1,4 +1,4 @@
-I'll explain the complete flow of Mamba, from input to output.
+
 
 ## Overall Architecture
 
