@@ -37,19 +37,17 @@ To visualize the data, imagine a **File Cabinet**:
 4. **Features:** The **Text** written on each page (Speed: 45mph).
 
 ---
+ ## The Architecture Pipeline
 
-## ⚙️ The Architecture Pipeline
+The model uses a "Divide and Conquer" strategy. We cannot feed raw 4D data into Mamba, so we split the job into two specialists.
+Code snippet
 
-The model uses a **"Divide and Conquer"** strategy. We cannot feed raw 4D data into Mamba, so we split the job into two specialists.
-
-```mermaid
 graph LR
-    Input[Input Tensor: 4D] --> GAT[Spatial Specialist (GAT)]
-    GAT --> Merge[Dimension Flattening]
-    Merge --> Mamba[Temporal Specialist (Mamba)]
-    Mamba --> Output[Prediction]
+    A["Input Tensor: 4D"] --> B["Spatial Specialist (GAT)"]
+    B --> C["Dimension Flattening"]
+    C --> D["Temporal Specialist (Mamba)"]
+    D --> E["Prediction"]
 
-```
 
 ### Phase 1: Spatial Specialist (GAT)
 
