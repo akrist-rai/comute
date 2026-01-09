@@ -45,8 +45,8 @@ Code snippet
 graph LR
    ##  A["Input Tensor: 4D"] --> B["Spatial Specialist (GAT)"]
    ## B --> C["Dimension Flattening"]
-    ##C --> D["Temporal Specialist (Mamba)"]
-    ##D --> E["Prediction"]
+   ##C --> D["Temporal Specialist (Mamba)"]
+   ##D --> E["Prediction"]
 
 
 ### Phase 1: Spatial Specialist (GAT)
